@@ -16,7 +16,7 @@
       line-height: 1.8;
     }
 
-    .container {
+    .page {
       background: #2A2A2A;
       padding: 50px;
       border-radius: 22px;
@@ -58,6 +58,10 @@
       color: #9CAF88;
       margin-top: 0;
       margin-bottom: 18px;
+    }
+
+    .hero-intro {
+      max-width: 760px;
     }
 
     p, li {
@@ -110,34 +114,41 @@
       margin-top: 45px;
     }
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
+    .portfolio-heading {
+      margin-top: 55px;
+      margin-bottom: 25px;
+      color: #9CAF88;
+      font-size: 1.5rem;
+      border-bottom: 1px solid #404040;
+      padding-bottom: 10px;
     }
 
-    .tag {
-      border: 1px solid #404040;
-      background-color: #333333;
-      color: #D1D5DB;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-size: 0.92rem;
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 25px;
+      margin-bottom: 45px;
     }
 
     .project {
-      margin-bottom: 28px;
-      padding: 22px;
+      background-color: #303030;
       border: 1px solid #404040;
       border-radius: 16px;
-      background-color: #303030;
+      padding: 25px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .two-column {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    .project p {
+      margin-bottom: 0;
     }
 
     footer {
@@ -159,15 +170,11 @@
         height: 150px;
       }
 
-      .two-column {
-        grid-template-columns: 1fr;
-      }
-
       h1 {
         font-size: 2.2rem;
       }
 
-      .container {
+      .page {
         padding: 32px;
       }
     }
@@ -175,153 +182,300 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Muhammad Saad</h1>
+<div class="page">
 
-        <p class="subtitle">
-          Data, Privacy, Technology & Public Policy
-        </p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Muhammad Saad</h1>
 
-        <p>
-          I work at the intersection of data science, privacy-enhancing technologies,
-          digital governance, and public policy.
-        </p>
+      <p class="subtitle">
+        Government & Regulatory Engagement • Privacy & Data Governance • Computational Policy Analysis
+      </p>
 
-        <div class="button-row">
-          <a class="button" href="#projects">Projects</a>
-          <a class="button" href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a>
-          <a class="button" href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a>
-          <a class="button" href="#contact">Contact</a>
-        </div>
+      <p class="hero-intro">
+        I work at the intersection of government and regulatory affairs,
+        privacy-enhancing technologies, and computational approaches to public policy.
+        I am interested in how data, technology, and institutions can be responsibly
+        governed and used to address policy challenges. My experience spans
+        democratic governance, international development, digital regulation,
+        public health, and privacy-enhancing technologies.
+      </p>
+
+      <div class="button-row">
+        <a class="button" href="#projects">Projects</a>
+        <a class="button" href="#experience">Experience</a>
+        <a class="button" href="#education">Education</a>
+        <a class="button" href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a>
       </div>
+    </div>
 
+    <div class="hero-photo-wrap">
       <img src="profile.jpg" alt="Muhammad Saad" class="profile-photo">
-    </section>
+    </div>
+  </section>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#interests">Research Interests</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience & Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#areas">Areas of Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="about" class="section">
-      <h2>About Me</h2>
+  <section id="about" class="section">
+    <h2>About</h2>
 
-      <p>
-        I am currently pursuing an MS in Data Science for Public Policy at
-        Georgetown University. My academic and research work focuses on applied
-        data science, privacy-preserving methods, and public policy analysis.
-      </p>
+    <p>
+      My professional experience spans the government, development, and technology
+      sectors, with work across democratic governance, digital regulation,
+      public health, and data governance. I have worked with organizations
+      including the UK Foreign, Commonwealth & Development Office (FCDO), the
+      Asian Development Bank (ADB), the Asia Internet Coalition (AIC), and the
+      Pakistan Institute of Legislative Development and Transparency (PILDAT).
+    </p>
 
-      <p>
-        Previously, I completed a Master of Public Policy at the National
-        University of Singapore and my undergraduate degree at Lahore University
-        of Management Sciences. I have worked with organizations including
-        PILDAT, the UK Foreign, Commonwealth & Development Office, the Asian
-        Development Bank, and the Asia Internet Coalition.
-      </p>
-    </section>
+    <p>
+      Across these roles, I have advised on regulatory strategy, designed
+      data-driven policy solutions, and contributed to initiatives ranging from
+      digital payments infrastructure and content regulation to immunization
+      equity, social protection, and parliamentary performance assessment.
+    </p>
+  </section>
 
-    <section id="interests" class="section">
-      <h2>Research Interests</h2>
+  <section id="areas" class="section">
+    <h2>Areas of Work</h2>
 
-      <div class="tags">
-        <span class="tag">Differential Privacy</span>
-        <span class="tag">Privacy-Enhancing Technologies</span>
-        <span class="tag">Mobility Data</span>
-        <span class="tag">Epidemiological Modeling</span>
-        <span class="tag">Data Governance</span>
-        <span class="tag">Privacy & Public Policy</span>
-        <span class="tag">Computational Social Science</span>
-        <span class="tag">Healthcare Analytics</span>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Government & Regulatory Engagement</h3>
+        <p>
+          Policy engagement, stakeholder management, regulatory strategy,
+          institutional reform, and government relations across public-sector
+          and technology contexts.
+        </p>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Selected Projects</h2>
 
       <div class="project">
-        <h3>Privacy, Mobility Data, and Epidemiological Modeling</h3>
+        <h3>Privacy & Data Governance</h3>
         <p>
-          Ongoing research examining the trade-offs between privacy protection
-          and public health utility in mobility networks using differential
-          privacy, membership inference attacks, and infectious disease modeling.
+          Data protection, privacy regulation, privacy-enhancing technologies,
+          and responsible frameworks for data sharing and governance.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Computational Policy Analysis</h3>
+        <p>
+          Application of data science, machine learning, simulation, and
+          quantitative methods to analyze complex policy problems and support
+          evidence-based decision-making.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Public Health & Development</h3>
+        <p>
+          Research and policy work on immunization equity, social protection,
+          healthcare analytics, and development program design and delivery.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Selected Work</h2>
+
+    <h3 class="portfolio-heading">Data Work</h3>
+
+    <div class="project-grid">
+      <div class="project">
+        <h3>
+          <a href="https://docs.google.com/presentation/d/1MJPch2nzFIGcELzYK52SRPJlSPhbtRPq/edit?slide=id.gee0fa3e69a_6_0#slide=id.gee0fa3e69a_6_0" target="_blank">
+            Differential Privacy for Mobility-based Epidemic Models (2026)
+          </a>
+        </h3>
+        <p>
+          Examines trade-offs between privacy protection and public health utility
+          in mobility networks using differential privacy, membership inference
+          attacks, and infectious disease modeling.
         </p>
       </div>
 
       <div class="project">
         <h3>
-          <a href="https://github.com/MuhammadSaad0554/differentially-private-topic-modeling-ppol6801" target="_blank">
-            Differentially Private Topic Modeling
+          <a href="https://jwheatfallmel.github.io/cpz-massive-data-project/#team" target="_blank">
+            Effect of Congestion Pricing on Vehicular Movement in NYC (2026)
           </a>
         </h3>
         <p>
-          This project demonstrates privacy risks in non-private Latent Dirichlet
-          Allocation and implements a simplified differentially private algorithm
-          by injecting Laplace noise into a Collapsed Gibbs Sampling variant of LDA.
+          Uses large-scale mobility data to evaluate the impact of congestion
+          pricing on traffic flows and vehicular movement patterns across New York City.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>
+          <a href="https://cassiezhang1012.shinyapps.io/final_project/" target="_blank">
+            Adaptive Testing for Data Science Recruitment (2025)
+          </a>
+        </h3>
+        <p>
+          Interactive application exploring adaptive testing methods for assessing
+          candidates in data science recruitment contexts.
         </p>
       </div>
 
       <div class="project">
         <h3>
           <a href="https://github.com/MuhammadSaad0554/music-recommender" target="_blank">
-            Music Recommendation System Using Spotify Audio Features
+            Music Recommendation System (2025)
           </a>
         </h3>
         <p>
-          A music recommendation application built using clustering and
-          dimensionality reduction techniques, leveraging Spotify audio features
-          to generate personalized recommendations.
+          Recommendation system using Spotify audio features, clustering,
+          and dimensionality reduction techniques to generate personalized recommendations.
         </p>
       </div>
-    </section>
+    </div>
 
-    <section id="experience" class="section">
-      <h2>Experience & Education</h2>
+    <h3 class="portfolio-heading">Policy Work</h3>
 
-      <div class="two-column">
-        <div>
-          <h3>Education</h3>
-          <ul>
-            <li>MS Data Science for Public Policy — Georgetown University</li>
-            <li>Master of Public Policy — National University of Singapore</li>
-            <li>Undergraduate Degree — Lahore University of Management Sciences</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Experience</h3>
-          <ul>
-            <li>UK Foreign, Commonwealth & Development Office</li>
-            <li>Asian Development Bank</li>
-            <li>Asia Internet Coalition</li>
-            <li>PILDAT</li>
-          </ul>
-        </div>
+    <div class="project-grid">
+      <div class="project">
+        <h3>
+          <a href="https://www.dawn.com/news/1849540" target="_blank">
+            Economic and Operational Consequences of Data Privacy in Pakistan (2024)
+          </a>
+        </h3>
+        <p>
+          Assessed the implications of Pakistan's proposed data privacy framework
+          for businesses, innovation, and digital economy stakeholders.
+        </p>
       </div>
-    </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
+      <div class="project">
+        <h3>
+          <a href="https://drive.google.com/file/d/133LRNomHp3i0YOMeciUJt9lZHcVEiZ7x/view" target="_blank">
+            Regulatory Compliance Risks for Content Hosting Platforms in APAC Markets (2022)
+          </a>
+        </h3>
+        <p>
+          Evaluated legal, regulatory, and operational risks for content hosting
+          platforms across Asia-Pacific jurisdictions and developed compliance strategies.
+        </p>
+      </div>
 
-      <p>Feel free to reach out for collaborations, research discussions, or related opportunities.</p>
+      <div class="project">
+        <h3>
+          <a href="https://pildat.org/parliamentary-monitoring1/pildat-issues-performance-analysis-of-provincial-assemblies" target="_blank">
+            Comparative Assessment of Pakistan's Provincial Assemblies (2014)
+          </a>
+        </h3>
+        <p>
+          Conducted a comparative evaluation of legislative performance and democratic
+          accountability across Pakistan's provincial assemblies.
+        </p>
+      </div>
 
-      <ul>
-        <li>Email: ms4689@georgetown.edu</li>
-        <li><a href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </section>
+      <div class="project">
+        <h3>
+          <a href="https://drive.google.com/file/d/1ET6CR3iMlfsdI590BYzehL6pylw0aVME/view" target="_blank">
+            Decision-making Toolkit on Social Assistance Beneficiary Identification in Emergencies (2022)
+          </a>
+        </h3>
+        <p>
+          Designed a decision-support toolkit to improve beneficiary identification
+          and targeting mechanisms for emergency social assistance programs.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      © 2026 Muhammad Saad
-    </footer>
+  <section id="experience" class="section">
+    <h2>Professional Experience</h2>
 
-  </div>
+    <ul>
+      <li><strong>Fritz Research Fellow</strong> — Tech & Society Institute, Georgetown University (2025–Present)</li>
+      <li><strong>Senior Advisor</strong> — Asia Internet Coalition (2023–2024)</li>
+      <li><strong>Research Associate</strong> — Asian Development Bank (2021)</li>
+      <li><strong>Policy & Engagement Manager</strong> — UK Foreign, Commonwealth & Development Office (2017–2020)</li>
+      <li><strong>Projects Manager</strong> — Pakistan Institute of Legislative Development and Transparency (2014–2017)</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+
+    <ul>
+      <li>
+        <strong>MS in Data Science for Public Policy</strong><br>
+        Georgetown University (2026)<br>
+        Fulbright Scholar
+      </li>
+
+      <br>
+
+      <li>
+        <strong>Master of Public Policy</strong><br>
+        National University of Singapore (2022)<br>
+        Lee Foundation Scholar
+      </li>
+
+      <br>
+
+      <li>
+        <strong>Bachelor of Arts (Honours) - Humanities & Mathematics </strong><br>
+        Lahore University of Management Sciences (2014)
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills & Tools</h2>
+
+    <p>
+      <strong>Programming & Analytics:</strong>
+      Python, R, SQL, Tableau, Data Visualization
+    </p>
+
+    <p>
+      <strong>Methods:</strong>
+      Machine Learning, Econometrics, Causal Inference,
+      Simulation Modeling, Statistical Analysis
+    </p>
+
+    <p>
+      <strong>Policy & Governance:</strong>
+      Regulatory Analysis, Government Affairs,
+      Stakeholder Engagement, Digital Governance,
+      Public Policy Research
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <p>
+      Feel free to reach out regarding research collaborations,
+      consulting opportunities, or related work.
+    </p>
+
+    <ul>
+      <li>Email: ms4689@georgetown.edu</li>
+      <li><a href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2026 Muhammad Saad
+  </footer>
+
+</div>
+
 </body>
 </html>
