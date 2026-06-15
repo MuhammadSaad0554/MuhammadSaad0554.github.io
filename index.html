@@ -1,537 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhammad Saad</title>
 
-  <style>
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background-color: #1C1C1C;
-      color: #D1D5DB;
-      max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 25px;
-      line-height: 1.8;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    .page {
-      background: #2A2A2A;
-      padding: 50px;
-      border-radius: 22px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.45);
-    }
-
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 35px;
-    }
-
-    .hero-text {
-      flex: 1;
-    }
-
-    .profile-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #404040;
-    }
-
-    h1, h2, h3 {
-      line-height: 1.3;
-    }
-
-    h1 {
-      font-size: 3.6rem;
-      color: #D4AF37;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #D4AF37;
-      font-size: 2rem;
-      margin-bottom: 25px;
-    }
-
-    h3 {
-      color: #F5F5F5;
-    }
-
-    .subtitle {
-      font-size: 1.25rem;
-      color: #9CAF88;
-      margin-top: 0;
-      margin-bottom: 18px;
-    }
-
-    .hero-intro {
-      max-width: 760px;
-    }
-
-    p, li {
-      color: #D1D5DB;
-    }
-
-    a {
-      color: #9CAF88;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #B7C9A8;
-      text-decoration: underline;
-    }
-
-    nav {
-      margin: 30px 0;
-      padding-bottom: 18px;
-      border-bottom: 1px solid #404040;
-    }
-
-    nav a {
-      margin-right: 22px;
-      font-weight: bold;
-    }
-
-    .button-row {
-      margin-top: 22px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-right: 12px;
-      margin-bottom: 10px;
-      padding: 9px 16px;
-      border: 1px solid #9CAF88;
-      border-radius: 999px;
-      color: #F5F5F5;
-      font-size: 0.95rem;
-    }
-
-    .button:hover {
-      background-color: #9CAF88;
-      color: #1C1C1C;
-      text-decoration: none;
-    }
-
-    .section {
-      margin-top: 45px;
-    }
-
-    .portfolio-heading {
-      margin-top: 55px;
-      margin-bottom: 25px;
-      color: #D4AF37;
-      font-size: 1.7rem;
-      border-bottom: 1px solid #404040;
-      padding-bottom: 10px;
-    }
-
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-      gap: 25px;
-      margin-bottom: 45px;
-    }
-
-    .project {
-      background-color: #303030;
-      border: 1px solid #404040;
-      border-radius: 16px;
-      padding: 25px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-
-    .project h3 {
-      margin-top: 0;
-    }
-
-    .project p {
-      margin-bottom: 0;
-    }
-
-    .media {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 1px solid #404040;
-      margin-bottom: 15px;
-      background-color: #1C1C1C;
-    }
-
-    footer {
-      margin-top: 50px;
-      padding-top: 20px;
-      border-top: 1px solid #404040;
-      font-size: 0.9rem;
-      color: #A1A1AA;
-    }
-
-    @media (max-width: 750px) {
-      .hero {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-      }
-
-      .profile-photo {
-        width: 150px;
-        height: 150px;
-      }
-
-      h1 {
-        font-size: 2.8rem;
-      }
-
-      h2 {
-        font-size: 1.7rem;
-      }
-
-      .page {
-        padding: 32px;
-      }
-    }
-  </style>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<div class="page">
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Muhammad Saad</h1>
-
-      <p class="subtitle">
-        Government & Regulatory Engagement • Privacy & Data Governance • Computational Policy Analysis
-      </p>
-
-      <p class="hero-intro">
-        I work at the intersection of government and regulatory affairs,
-        privacy-enhancing technologies, and computational approaches to public policy.
-        I am interested in how data, technology, and institutions can be responsibly
-        governed and used to address policy challenges. My experience spans
-        democratic governance, international development, digital regulation,
-        public health, and privacy-enhancing technologies.
-      </p>
-
-      <div class="button-row">
-        <a class="button" href="Muhammad_Saad_CV.pdf" target="_blank">CV</a>
-        <a class="button" href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a>
-        <a class="button" href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a>
-        <a class="button" href="#contact">Contact</a>
-      </div>
-    </div>
-
-    <div class="hero-photo-wrap">
-      <img src="profile.jpg" alt="Muhammad Saad" class="profile-photo">
-    </div>
-  </section>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#areas">Areas of Work</a>
-    <a href="#projects">Selected Work</a>
-    <a href="#experience">Experience</a>
-    <a href="#engagements">Public Engagement</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
+  <nav class="navbar">
+    <a href="about.html">About</a>
+    <a href="areas-of-work.html">Areas of Work</a>
+    <a href="selected-work.html">Selected Work</a>
+    <a href="experience.html">Experience</a>
+    <a href="public-engagement.html">Public Engagement</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
   </nav>
 
-  <section id="about" class="section">
-    <h2>About</h2>
+  <main class="home">
 
-    <p>
-      My professional experience spans the government, development, and technology
-      sectors, with work across democratic governance, digital regulation, applied privacy,
-      public health, and data governance. I have worked with organizations
-      including Google, the Foreign, Commonwealth & Development Office (FCDO), the
-      Asian Development Bank (ADB), the Asia Internet Coalition (AIC), and the
-      Pakistan Institute of Legislative Development and Transparency (PILDAT).
+    <img src="profile.jpg"
+         alt="Muhammad Saad"
+         class="profile-photo">
+
+    <h1>Muhammad Saad</h1>
+
+    <p class="subtitle">
+      Government & Regulatory Engagement • Privacy & Data Governance • Computational Policy Analysis
     </p>
-  </section>
 
-  <section id="areas" class="section">
-    <h2>Areas of Work</h2>
+    <p class="intro">
+      I work at the intersection of government and regulatory affairs,
+      privacy-enhancing technologies, and computational approaches to public policy.
+      I am interested in how data, technology, and institutions can be responsibly
+      governed and used to address policy challenges. My experience spans democratic
+      governance, international development, digital regulation, public health,
+      and privacy-enhancing technologies.
+    </p>
 
-    <div class="project-grid">
-      <div class="project">
-        <h3>Government & Regulatory Engagement</h3>
-        <p>
-          Policy engagement, stakeholder management, regulatory strategy,
-          institutional reform, and government relations across public-sector
-          and technology contexts.
-        </p>
-      </div>
+    <div class="home-links">
 
-      <div class="project">
-        <h3>Privacy & Data Governance</h3>
-        <p>
-          Data protection, privacy regulation, privacy-enhancing technologies,
-          and responsible frameworks for data sharing and governance.
-        </p>
-      </div>
+      <a href="Muhammad_Saad_CV.pdf"
+         target="_blank"
+         title="Curriculum Vitae">
+        <i class="fa-solid fa-file-lines"></i>
+      </a>
 
-      <div class="project">
-        <h3>Computational Policy Analysis</h3>
-        <p>
-          Application of data science, machine learning, simulation, and
-          quantitative methods to analyze complex policy problems and support
-          evidence-based decision-making.
-        </p>
-      </div>
+      <a href="https://github.com/MuhammadSaad0554"
+         target="_blank"
+         title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-      <div class="project">
-        <h3>Public Health & Development</h3>
-        <p>
-          Research and policy work on immunization equity, social protection,
-          healthcare analytics, and development program design and delivery.
-        </p>
-      </div>
-    </div>
-  </section>
+      <a href="https://www.linkedin.com/in/muhammad-saad-pp/"
+         target="_blank"
+         title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-  <section id="projects" class="section">
-    <h2>Selected Work</h2>
+      <a href="mailto:ms4689@georgetown.edu"
+         title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
 
-    <h3 class="portfolio-heading">Data Work</h3>
-
-    <div class="project-grid">
-      <div class="project">
-        <h3>
-          <a href="https://docs.google.com/presentation/d/1MJPch2nzFIGcELzYK52SRPJlSPhbtRPq/edit?slide=id.gee0fa3e69a_6_0#slide=id.gee0fa3e69a_6_0" target="_blank">
-            Differential Privacy for Mobility-based Epidemic Models (2026)
-          </a>
-        </h3>
-        <p>
-          Examines trade-offs between privacy protection and public health utility
-          in mobility networks using differential privacy, membership inference
-          attacks, and infectious disease modeling.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://jwheatfallmel.github.io/cpz-massive-data-project/#team" target="_blank">
-            Effect of Congestion Pricing on Vehicular Movement in NYC (2026)
-          </a>
-        </h3>
-        <p>
-          Uses large-scale mobility data to evaluate the impact of congestion
-          pricing on traffic flows and vehicular movement patterns across New York City.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://cassiezhang1012.shinyapps.io/final_project/" target="_blank">
-            Adaptive Testing for Data Science Recruitment (2025)
-          </a>
-        </h3>
-        <p>
-          Interactive application exploring adaptive testing methods for assessing
-          candidates in data science recruitment contexts.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://music-recommender-i9ztkfxvvlrgrdzunmvpei.streamlit.app/" target="_blank">
-            Music Recommendation System (2025)
-          </a>
-        </h3>
-        <p>
-          Recommendation system using Spotify audio features, clustering,
-          and dimensionality reduction techniques to generate personalized recommendations.
-        </p>
-      </div>
     </div>
 
-    <h3 class="portfolio-heading">Policy Work</h3>
-
-    <div class="project-grid">
-      <div class="project">
-        <h3>
-          <a href="https://www.dawn.com/news/1849540" target="_blank">
-            Economic and Operational Consequences of Data Privacy in Pakistan (2024)
-          </a>
-        </h3>
-        <p>
-          Assessed the implications of Pakistan's proposed data privacy framework
-          for businesses, innovation, and digital economy stakeholders.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://drive.google.com/file/d/133LRNomHp3i0YOMeciUJt9lZHcVEiZ7x/view" target="_blank">
-            Regulatory Compliance Risks for Content Hosting Platforms in APAC Markets (2022)
-          </a>
-        </h3>
-        <p>
-          Evaluated legal, regulatory, and operational risks for content hosting
-          platforms across Asia-Pacific jurisdictions and developed compliance strategies.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://pildat.org/parliamentary-monitoring1/pildat-issues-performance-analysis-of-provincial-assemblies" target="_blank">
-            Comparative Assessment of Pakistan's Provincial Assemblies (2014)
-          </a>
-        </h3>
-        <p>
-          Conducted a comparative evaluation of legislative performance and democratic
-          accountability across Pakistan's provincial assemblies.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>
-          <a href="https://drive.google.com/file/d/1ET6CR3iMlfsdI590BYzehL6pylw0aVME/view" target="_blank">
-            Decision-making Toolkit on Social Assistance Beneficiary Identification in Emergencies (2022)
-          </a>
-        </h3>
-        <p>
-          Designed a decision-support toolkit to improve beneficiary identification
-          and targeting mechanisms for emergency social assistance programs.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <h2>Professional Experience</h2>
-
-    <ul>
-      <li><strong>Fritz Research Fellow</strong> — Tech & Society Institute, Georgetown University (2024–2026)</li>
-      <li><strong>Senior Advisor</strong> — Asia Internet Coalition (2023–2024)</li>
-      <li><strong>Research Associate</strong> — Asian Development Bank (2021)</li>
-      <li><strong>Policy & Engagement Manager</strong> — UK Foreign, Commonwealth & Development Office (2017–2020)</li>
-      <li><strong>Projects Manager</strong> — Pakistan Institute of Legislative Development and Transparency (2014–2017)</li>
-    </ul>
-  </section>
-
-  <section id="engagements" class="section">
-    <h2>Selected Public Engagements</h2>
-
-    <div class="project-grid">
-      <div class="project">
-        <img src="engagement-prime-minister.jpeg"
-             alt="Meeting with the Prime Minister of Pakistan"
-             class="media">
-
-        <p>
-          Call-on with the Prime Minister of Pakistan as part of Asia Internet Coalition
-          engagement on Pakistan's draft Data Privacy Bill and digital policy priorities (2024).
-        </p>
-      </div>
-
-      <div class="project">
-        <img src="engagement-chief-minister.jpeg"
-             alt="Meeting with the Chief Minister of Khyber Pakhtunkhwa"
-             class="media">
-
-        <p>
-          Consultation with the Chief Minister of Khyber Pakhtunkhwa on rule-of-law
-          and governance reforms (2016).
-        </p>
-      </div>
-
-      <div class="project">
-        <video class="media" controls>
-          <source src="engagement-prince-william.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-        <p>
-          Member of the organizing secretariat for the first official visit of the
-          Prince and Princess of Wales to Pakistan (2019).
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="education" class="section">
-    <h2>Education</h2>
-
-    <ul>
-      <li>
-        <strong>MS in Data Science for Public Policy</strong><br>
-        Georgetown University (2026)<br>
-        Fulbright Scholar
-      </li>
-
-      <br>
-
-      <li>
-        <strong>Master of Public Policy</strong><br>
-        National University of Singapore (2022)<br>
-        Lee Foundation Scholar
-      </li>
-
-      <br>
-
-      <li>
-        <strong>Bachelor of Arts (Honours) — Humanities & Mathematics</strong><br>
-        Lahore University of Management Sciences (2014)
-      </li>
-    </ul>
-  </section>
-
-  <section id="skills" class="section">
-    <h2>Skills & Tools</h2>
-
-    <p>
-      <strong>Programming & Analytics:</strong>
-      Python, R, SQL, Tableau, Data Visualization
-    </p>
-
-    <p>
-      <strong>Methods:</strong>
-      Machine Learning, Econometrics, Causal Inference,
-      Simulation Modeling, Statistical Analysis
-    </p>
-
-    <p>
-      <strong>Policy & Governance:</strong>
-      Regulatory Analysis, Government Affairs,
-      Stakeholder Engagement, Digital Governance,
-      Public Policy Research
-    </p>
-  </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-
-    <p>
-      Feel free to reach out regarding research collaborations,
-      consulting opportunities, or related work.
-    </p>
-
-    <ul>
-      <li>Email: ms4689@georgetown.edu</li>
-      <li><a href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    © 2026 Muhammad Saad
-  </footer>
-
-</div>
+  </main>
 
 </body>
+
 </html>
