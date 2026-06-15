@@ -1,106 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Muhammad Saad | DSPP</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 40px auto;
-            line-height: 1.6;
-            color: #222;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #1a73e8;
-        }
-        .section {
-            margin-top: 40px;
-        }
-        .project {
-            margin-bottom: 25px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Saad</title>
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #F7F6F2;
+      color: #4A5568;
+      max-width: 950px;
+      margin: 50px auto;
+      padding: 0 25px;
+      line-height: 1.8;
+    }
+
+    .container {
+      background: #FFFFFF;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .profile-photo {
+      width: 165px;
+      height: 165px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin-bottom: 25px;
+      border: 4px solid #E5E2DC;
+    }
+
+    h1, h2, h3 {
+      color: #222222;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #5E7D6A;
+      margin-top: 0;
+    }
+
+    nav {
+      margin: 30px 0;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #E5E2DC;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #5E7D6A;
+    }
+
+    nav a:hover {
+      color: #42584A;
+      text-decoration: underline;
+    }
+
+    a {
+      color: #5E7D6A;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #42584A;
+      text-decoration: underline;
+    }
+
+    .section {
+      margin-top: 45px;
+    }
+
+    .project {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E5E2DC;
+    }
+
+    .project:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #E5E2DC;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="container">
+
+    <!-- Upload your image as profile.jpg in the same GitHub repository -->
+    <img src="profile.jpg" alt="Muhammad Saad" class="profile-photo">
 
     <h1>Muhammad Saad</h1>
-    <p><strong>MS in Data Science for Public Policy | Georgetown University</strong></p>
+
+    <p class="subtitle">
+      Data, Privacy, Technology & Public Policy
+    </p>
+
+    <p>
+      <strong>MS in Data Science for Public Policy | Georgetown University</strong>
+    </p>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <div id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I am a graduate student in the MS in Data Science for Public Policy program at
-            Georgetown University’s McCourt School of Public Policy. My academic and research
-            work focuses on applied data science, privacy-preserving methods, and public policy analysis.
-        </p>
-        <p>
-            I am particularly interested in differential privacy, privacy preserving machine learning, 
-	    and healthcare analytics that utilize personal health records.
-        </p>
+      <h2>About Me</h2>
 
-        <h3>Skills & Interests</h3>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>SQL</li>
-            <li>Data Visualization</li>
-            <li>Privacy & Public Policy</li>
-        </ul>
+      <p>
+        I work at the intersection of data, privacy, technology, and public policy.
+        My academic and research work focuses on applied data science,
+        privacy-preserving methods, and public policy analysis.
+      </p>
+
+      <p>
+        I am particularly interested in differential privacy, privacy-enhancing
+        technologies, privacy-preserving machine learning, mobility data,
+        healthcare analytics, and data governance.
+      </p>
+
+      <p>
+        I am currently pursuing an MS in Data Science for Public Policy at
+        Georgetown University. Previously, I completed a Master of Public Policy
+        at the National University of Singapore and my undergraduate degree at
+        Lahore University of Management Sciences. I have worked with organizations
+        including PILDAT, the UK Foreign, Commonwealth & Development Office,
+        the Asian Development Bank, and the Asia Internet Coalition.
+      </p>
+
+      <h3>Skills & Interests</h3>
+      <ul>
+        <li>Python</li>
+        <li>R</li>
+        <li>SQL</li>
+        <li>Data Visualization</li>
+        <li>Differential Privacy</li>
+        <li>Privacy & Public Policy</li>
+        <li>Computational Social Science</li>
+      </ul>
     </div>
 
     <div id="projects" class="section">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
 
-        <div class="project">
-            <h3>
-                <a href="https://github.com/MuhammadSaad0554/differentially-private-topic-modeling-ppol6801"
-                   target="_blank">
-                    Differentially Private Topic Modeling
-                </a>
-            </h3>
-            <p>
-                This project demonstrates privacy risks in non-private Latent Dirichlet Allocation (LDA)
-                and implements a simplified differentially private algorithm by injecting Laplace noise
-                into a Collapsed Gibbs Sampling (CGS) variant of LDA.
-            </p>
-        </div>
+      <div class="project">
+        <h3>
+          <a href="https://github.com/MuhammadSaad0554/differentially-private-topic-modeling-ppol6801" target="_blank">
+            Differentially Private Topic Modeling
+          </a>
+        </h3>
+        <p>
+          This project demonstrates privacy risks in non-private Latent Dirichlet
+          Allocation and implements a simplified differentially private algorithm
+          by injecting Laplace noise into a Collapsed Gibbs Sampling variant of LDA.
+        </p>
+      </div>
 
-        <div class="project">
-            <h3>
-                <a href="https://github.com/MuhammadSaad0554/music-recommender"
-                   target="_blank">
-                    Music Recommendation System Using Spotify Audio Features
-                </a>
-            </h3>
-            <p>
-                A music recommendation application built using clustering and dimensionality reduction
-                techniques, leveraging Spotify audio features to generate personalized recommendations.
-            </p>
-        </div>
+      <div class="project">
+        <h3>
+          <a href="https://github.com/MuhammadSaad0554/music-recommender" target="_blank">
+            Music Recommendation System Using Spotify Audio Features
+          </a>
+        </h3>
+        <p>
+          A music recommendation application built using clustering and dimensionality
+          reduction techniques, leveraging Spotify audio features to generate
+          personalized recommendations.
+        </p>
+      </div>
 
-        <p><strong>More projects will be added as the semester progresses.</strong></p>
+      <div class="project">
+        <h3>Privacy, Mobility Data, and Epidemiological Modeling</h3>
+        <p>
+          Ongoing research examining the trade-offs between privacy protection and
+          public health utility in mobility networks using differential privacy,
+          membership inference attacks, and infectious disease modeling.
+        </p>
+      </div>
     </div>
 
     <div id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaborations or questions.</p>
-        <ul>
-            <li>ms4689@georgetown.edu</li>
-            <li><a href="https://github.com/MuhammadSaad0554">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/n</a></li>
-        </ul>
+      <h2>Contact</h2>
+
+      <p>Feel free to reach out for collaborations or questions.</p>
+
+      <ul>
+        <li>Email: ms4689@georgetown.edu</li>
+        <li><a href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a></li>
+      </ul>
     </div>
 
+    <footer>
+      © 2026 Muhammad Saad
+    </footer>
+
+  </div>
 </body>
 </html>
-
