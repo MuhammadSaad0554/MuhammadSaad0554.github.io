@@ -8,95 +8,168 @@
   <style>
     body {
       font-family: Georgia, "Times New Roman", serif;
-      background-color: #F7F6F2;
-      color: #4A5568;
-      max-width: 950px;
+      background-color: #1C1C1C;
+      color: #D1D5DB;
+      max-width: 1100px;
       margin: 50px auto;
       padding: 0 25px;
       line-height: 1.8;
     }
 
     .container {
-      background: #FFFFFF;
+      background: #2A2A2A;
       padding: 50px;
-      border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border-radius: 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 35px;
+    }
+
+    .hero-text {
+      flex: 1;
     }
 
     .profile-photo {
-      width: 165px;
-      height: 165px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 50%;
-      display: block;
-      margin-bottom: 25px;
-      border: 4px solid #E5E2DC;
+      border: 4px solid #404040;
     }
 
     h1, h2, h3 {
-      color: #222222;
+      color: #F5F5F5;
       line-height: 1.3;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 5px;
+      font-size: 2.8rem;
+      margin-bottom: 8px;
     }
 
     .subtitle {
-      font-size: 1.1rem;
-      color: #5E7D6A;
+      font-size: 1.25rem;
+      color: #9CAF88;
       margin-top: 0;
+      margin-bottom: 18px;
     }
 
-    nav {
-      margin: 30px 0;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #E5E2DC;
-    }
-
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #5E7D6A;
-    }
-
-    nav a:hover {
-      color: #42584A;
-      text-decoration: underline;
+    p, li {
+      color: #D1D5DB;
     }
 
     a {
-      color: #5E7D6A;
+      color: #9CAF88;
       text-decoration: none;
     }
 
     a:hover {
-      color: #42584A;
+      color: #B7C9A8;
       text-decoration: underline;
+    }
+
+    nav {
+      margin: 30px 0;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #404040;
+    }
+
+    nav a {
+      margin-right: 22px;
+      font-weight: bold;
+    }
+
+    .button-row {
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      padding: 9px 16px;
+      border: 1px solid #9CAF88;
+      border-radius: 999px;
+      color: #F5F5F5;
+      font-size: 0.95rem;
+    }
+
+    .button:hover {
+      background-color: #9CAF88;
+      color: #1C1C1C;
+      text-decoration: none;
     }
 
     .section {
       margin-top: 45px;
     }
 
-    .project {
-      margin-bottom: 30px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #E5E2DC;
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
     }
 
-    .project:last-child {
-      border-bottom: none;
+    .tag {
+      border: 1px solid #404040;
+      background-color: #333333;
+      color: #D1D5DB;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+    }
+
+    .project {
+      margin-bottom: 28px;
+      padding: 22px;
+      border: 1px solid #404040;
+      border-radius: 16px;
+      background-color: #303030;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
     }
 
     footer {
       margin-top: 50px;
       padding-top: 20px;
-      border-top: 1px solid #E5E2DC;
+      border-top: 1px solid #404040;
       font-size: 0.9rem;
-      color: #777;
+      color: #A1A1AA;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .container {
+        padding: 32px;
+      }
     }
   </style>
 </head>
@@ -104,63 +177,82 @@
 <body>
   <div class="container">
 
-    <!-- Upload your image as profile.jpg in the same GitHub repository -->
-    <img src="profile.jpg" alt="Muhammad Saad" class="profile-photo">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Muhammad Saad</h1>
 
-    <h1>Muhammad Saad</h1>
+        <p class="subtitle">
+          Data, Privacy, Technology & Public Policy
+        </p>
 
-    <p class="subtitle">
-      Data, Privacy, Technology & Public Policy
-    </p>
+        <p>
+          I work at the intersection of data science, privacy-enhancing technologies,
+          digital governance, and public policy.
+        </p>
 
-    <p>
-      <strong>MS in Data Science for Public Policy | Georgetown University</strong>
-    </p>
+        <div class="button-row">
+          <a class="button" href="#projects">Projects</a>
+          <a class="button" href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a>
+          <a class="button" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <img src="profile.jpg" alt="Muhammad Saad" class="profile-photo">
+    </section>
 
     <nav>
       <a href="#about">About</a>
+      <a href="#interests">Research Interests</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience & Education</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <div id="about" class="section">
+    <section id="about" class="section">
       <h2>About Me</h2>
 
       <p>
-        I work at the intersection of data, privacy, technology, and public policy.
-        My academic and research work focuses on applied data science,
-        privacy-preserving methods, and public policy analysis.
-      </p>
-
-      <p>
-        I am particularly interested in differential privacy, privacy-enhancing
-        technologies, privacy-preserving machine learning, mobility data,
-        healthcare analytics, and data governance.
-      </p>
-
-      <p>
         I am currently pursuing an MS in Data Science for Public Policy at
-        Georgetown University. Previously, I completed a Master of Public Policy
-        at the National University of Singapore and my undergraduate degree at
-        Lahore University of Management Sciences. I have worked with organizations
-        including PILDAT, the UK Foreign, Commonwealth & Development Office,
-        the Asian Development Bank, and the Asia Internet Coalition.
+        Georgetown University. My academic and research work focuses on applied
+        data science, privacy-preserving methods, and public policy analysis.
       </p>
 
-      <h3>Skills & Interests</h3>
-      <ul>
-        <li>Python</li>
-        <li>R</li>
-        <li>SQL</li>
-        <li>Data Visualization</li>
-        <li>Differential Privacy</li>
-        <li>Privacy & Public Policy</li>
-        <li>Computational Social Science</li>
-      </ul>
-    </div>
+      <p>
+        Previously, I completed a Master of Public Policy at the National
+        University of Singapore and my undergraduate degree at Lahore University
+        of Management Sciences. I have worked with organizations including
+        PILDAT, the UK Foreign, Commonwealth & Development Office, the Asian
+        Development Bank, and the Asia Internet Coalition.
+      </p>
+    </section>
 
-    <div id="projects" class="section">
-      <h2>Projects</h2>
+    <section id="interests" class="section">
+      <h2>Research Interests</h2>
+
+      <div class="tags">
+        <span class="tag">Differential Privacy</span>
+        <span class="tag">Privacy-Enhancing Technologies</span>
+        <span class="tag">Mobility Data</span>
+        <span class="tag">Epidemiological Modeling</span>
+        <span class="tag">Data Governance</span>
+        <span class="tag">Privacy & Public Policy</span>
+        <span class="tag">Computational Social Science</span>
+        <span class="tag">Healthcare Analytics</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+
+      <div class="project">
+        <h3>Privacy, Mobility Data, and Epidemiological Modeling</h3>
+        <p>
+          Ongoing research examining the trade-offs between privacy protection
+          and public health utility in mobility networks using differential
+          privacy, membership inference attacks, and infectious disease modeling.
+        </p>
+      </div>
 
       <div class="project">
         <h3>
@@ -182,33 +274,49 @@
           </a>
         </h3>
         <p>
-          A music recommendation application built using clustering and dimensionality
-          reduction techniques, leveraging Spotify audio features to generate
-          personalized recommendations.
+          A music recommendation application built using clustering and
+          dimensionality reduction techniques, leveraging Spotify audio features
+          to generate personalized recommendations.
         </p>
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Privacy, Mobility Data, and Epidemiological Modeling</h3>
-        <p>
-          Ongoing research examining the trade-offs between privacy protection and
-          public health utility in mobility networks using differential privacy,
-          membership inference attacks, and infectious disease modeling.
-        </p>
+    <section id="experience" class="section">
+      <h2>Experience & Education</h2>
+
+      <div class="two-column">
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li>MS Data Science for Public Policy — Georgetown University</li>
+            <li>Master of Public Policy — National University of Singapore</li>
+            <li>Undergraduate Degree — Lahore University of Management Sciences</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Experience</h3>
+          <ul>
+            <li>UK Foreign, Commonwealth & Development Office</li>
+            <li>Asian Development Bank</li>
+            <li>Asia Internet Coalition</li>
+            <li>PILDAT</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div id="contact" class="section">
+    <section id="contact" class="section">
       <h2>Contact</h2>
 
-      <p>Feel free to reach out for collaborations or questions.</p>
+      <p>Feel free to reach out for collaborations, research discussions, or related opportunities.</p>
 
       <ul>
         <li>Email: ms4689@georgetown.edu</li>
         <li><a href="https://github.com/MuhammadSaad0554" target="_blank">GitHub</a></li>
         <li><a href="https://www.linkedin.com/in/muhammad-saad-pp/" target="_blank">LinkedIn</a></li>
       </ul>
-    </div>
+    </section>
 
     <footer>
       © 2026 Muhammad Saad
