@@ -27,10 +27,15 @@ body {
     flex-direction: column;
     align-items: flex-start;
 
+    border-left: 2px solid rgba(0, 86, 166, 0.15);
+    padding-left: 22px;
+
     z-index: 1000;
 }
 
 .navbar a {
+    position: relative;
+
     text-decoration: none;
     color: #002B5B;
 
@@ -45,9 +50,29 @@ body {
         transform 0.25s ease;
 }
 
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 3px;
+
+    background-color: #0056A6;
+    border-radius: 999px;
+
+    transition: width 0.25s ease;
+}
+
 .navbar a:hover {
     color: #0056A6;
     transform: translateX(4px);
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }
 
 /* ---------- HOME LAYOUT ---------- */
@@ -118,20 +143,6 @@ body {
 
 /* ---------- TEXT ---------- */
 
-.eyebrow {
-    font-family: "IBM Plex Mono", monospace;
-
-    color: #0056A6;
-
-    font-size: 0.95rem;
-    font-weight: 500;
-
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-
-    margin: 0 0 14px 0;
-}
-
 .name {
     font-family: "IBM Plex Mono", monospace;
 
@@ -152,32 +163,6 @@ body {
     color: #3f3f3f;
 
     margin: 0;
-}
-
-/* ---------- FOCUS TAGS ---------- */
-
-.focus-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    gap: 12px;
-
-    margin-top: 30px;
-}
-
-.focus-tags span {
-    padding: 8px 14px;
-
-    border-radius: 999px;
-
-    color: #002B5B;
-    background-color: rgba(0, 86, 166, 0.06);
-
-    border: 1px solid rgba(0, 86, 166, 0.16);
-
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
 /* ---------- RIGHT ICONS ---------- */
@@ -401,7 +386,9 @@ body {
         justify-content: center;
         flex-wrap: wrap;
 
+        border-left: none;
         padding: 25px 18px 0 18px;
+
         margin-bottom: 25px;
     }
 
@@ -439,18 +426,9 @@ body {
         margin-bottom: 18px;
     }
 
-    .eyebrow {
-        font-size: 0.82rem;
-        line-height: 1.5;
-    }
-
     .intro {
         font-size: 1.04rem;
         line-height: 1.75;
-    }
-
-    .focus-tags {
-        margin-top: 24px;
     }
 
     .home-links {
