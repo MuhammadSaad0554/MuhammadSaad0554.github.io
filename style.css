@@ -48,11 +48,14 @@ body {
 
     text-align: center;
 
-    max-width: 900px;
-    margin: auto;
+    max-width: 850px;
 
-    padding-left: 220px;
-    padding-right: 60px;
+    margin-left: 330px;
+    margin-right: auto;
+
+    padding: 60px 80px 60px 40px;
+
+    box-sizing: border-box;
 }
 
 /* ---------- PHOTO ---------- */
@@ -107,6 +110,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 22px;
+
+    z-index: 1000;
 }
 
 .home-links a {
@@ -137,32 +142,42 @@ body {
         justify-content: center;
         flex-wrap: wrap;
 
-        padding-top: 25px;
-        margin-bottom: 25px;
+        padding: 25px 20px 10px 20px;
+        margin-bottom: 20px;
     }
 
     .navbar a {
-        margin: 10px;
+        margin: 8px 12px;
+        font-size: 0.95rem;
     }
 
     .home {
         min-height: auto;
 
-        padding: 35px 25px 60px 25px;
+        margin: 0 auto;
+
+        padding: 25px 24px 35px 24px;
+
+        max-width: 100%;
     }
 
     .profile-photo {
-        width: 270px;
-        height: 270px;
+        width: 260px;
+        height: 260px;
+
+        margin-bottom: 18px;
     }
 
     .name {
-        font-size: 3.2rem;
+        font-size: 3rem;
+        margin-bottom: 18px;
     }
 
     .intro {
         font-size: 1.05rem;
-        line-height: 1.8;
+        line-height: 1.75;
+
+        max-width: 100%;
     }
 
     .home-links {
@@ -171,11 +186,13 @@ body {
         flex-direction: row;
         justify-content: center;
 
-        margin-top: 10px;
+        gap: 26px;
+
+        margin-top: 5px;
         margin-bottom: 35px;
     }
 
     .home-links a {
-        font-size: 1.6rem;
+        font-size: 1.55rem;
     }
 }
