@@ -253,13 +253,17 @@ body {
     margin-bottom: 35px;
 }
 
+.featured-project > a {
+    flex: 0 0 260px;
+}
+
 .featured-content {
     flex: 1;
 }
 
 .featured-preview {
-    width: 260px;
-    flex-shrink: 0;
+    width: 100%;
+    height: auto;
 
     display: block;
 
@@ -521,9 +525,14 @@ body {
         gap: 24px;
     }
 
-    .featured-preview {
+    .featured-project > a {
+        flex: none;
         width: 100%;
         max-width: 260px;
+    }
+
+    .featured-preview {
+        width: 100%;
     }
 
     .project-gallery {
