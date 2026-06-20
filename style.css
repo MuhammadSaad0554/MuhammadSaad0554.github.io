@@ -30,16 +30,20 @@ body {
     text-decoration: none;
     color: #002B5B;
 
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     font-weight: 600;
+    line-height: 1.35;
 
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 
-    transition: color 0.25s ease;
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
 }
 
 .navbar a:hover {
     color: #0056A6;
+    transform: translateX(4px);
 }
 
 /* ---------- HOME LAYOUT ---------- */
@@ -47,12 +51,12 @@ body {
 .home {
     min-height: 100vh;
 
-    margin-left: 250px;
+    margin-left: 260px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 110px;
 
     padding: 60px;
 
@@ -67,6 +71,7 @@ body {
     align-items: center;
 
     text-align: center;
+
     max-width: 850px;
 }
 
@@ -120,7 +125,7 @@ body {
     flex-direction: column;
     justify-content: center;
 
-    gap: 36px;
+    gap: 42px;
 
     align-self: center;
 }
@@ -128,7 +133,7 @@ body {
 .home-links a {
     color: #002B5B;
 
-    font-size: 2.35rem;
+    font-size: 2.75rem;
 
     text-decoration: none;
 
@@ -140,6 +145,186 @@ body {
 .home-links a:hover {
     color: #0056A6;
     transform: translateX(5px);
+}
+
+/* ---------- PORTFOLIO PAGES ---------- */
+
+.portfolio-page {
+    min-height: 100vh;
+
+    margin-left: 260px;
+
+    padding: 90px 90px 80px 90px;
+
+    box-sizing: border-box;
+}
+
+.portfolio-header {
+    max-width: 900px;
+    margin-bottom: 55px;
+}
+
+.section-label {
+    font-family: "IBM Plex Mono", monospace;
+
+    color: #0056A6;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    margin-bottom: 12px;
+}
+
+.portfolio-header h1 {
+    font-family: "IBM Plex Mono", monospace;
+
+    color: #002B5B;
+
+    font-size: 3.6rem;
+    font-weight: 600;
+
+    margin: 0 0 24px 0;
+}
+
+.portfolio-header p {
+    max-width: 760px;
+
+    font-size: 1.15rem;
+    line-height: 1.85;
+
+    color: #3f3f3f;
+}
+
+/* ---------- PROJECT CARDS ---------- */
+
+.projects-grid {
+    display: grid;
+    gap: 30px;
+
+    max-width: 950px;
+}
+
+.project-card {
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 43, 91, 0.12);
+    border-radius: 24px;
+
+    padding: 36px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 43, 91, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 86, 166, 0.25);
+
+    box-shadow:
+        0 18px 45px rgba(0, 43, 91, 0.09);
+}
+
+.featured-project {
+    border-left: 5px solid #0056A6;
+}
+
+.project-meta {
+    font-family: "IBM Plex Mono", monospace;
+
+    color: #0056A6;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    margin-bottom: 14px;
+}
+
+.project-card h2 {
+    color: #002B5B;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    margin: 0 0 16px 0;
+}
+
+.project-card p {
+    color: #3f3f3f;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    margin: 0 0 24px 0;
+}
+
+/* ---------- TAGS ---------- */
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+.project-tags span {
+    padding: 7px 14px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(0, 86, 166, 0.18);
+
+    background: rgba(0, 86, 166, 0.05);
+
+    color: #002B5B;
+
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+/* ---------- PROJECT BUTTONS ---------- */
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+.project-links a {
+    text-decoration: none;
+
+    color: white;
+    background-color: #002B5B;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    font-size: 0.92rem;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.project-links a:hover {
+    background-color: #0056A6;
+    transform: translateY(-2px);
 }
 
 /* ---------- MOBILE ---------- */
@@ -159,8 +344,7 @@ body {
     }
 
     .navbar a {
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 1.05rem;
         margin: 10px 14px;
     }
 
@@ -195,10 +379,28 @@ body {
     .home-links {
         flex-direction: row;
         justify-content: center;
-        gap: 32px;
+
+        gap: 34px;
     }
 
     .home-links a {
-        font-size: 2rem;
+        font-size: 2.1rem;
+    }
+
+    .portfolio-page {
+        margin-left: 0;
+        padding: 40px 24px 60px 24px;
+    }
+
+    .portfolio-header h1 {
+        font-size: 2.6rem;
+    }
+
+    .project-card {
+        padding: 28px 24px;
+    }
+
+    .project-card h2 {
+        font-size: 1.45rem;
     }
 }
