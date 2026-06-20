@@ -14,8 +14,10 @@ body {
 
 .navbar {
     position: fixed;
-    top: 60px;
+
     left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
 
     display: flex;
     flex-direction: column;
@@ -28,10 +30,10 @@ body {
     text-decoration: none;
     color: #002B5B;
 
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.15rem;
+    font-weight: 600;
 
-    margin-bottom: 18px;
+    margin-bottom: 24px;
 
     transition: color 0.25s ease;
 }
@@ -50,7 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 100px;
 
     padding: 60px;
 
@@ -116,7 +118,9 @@ body {
 .home-links {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+
+    gap: 36px;
 
     align-self: center;
 }
@@ -124,7 +128,7 @@ body {
 .home-links a {
     color: #002B5B;
 
-    font-size: 1.9rem;
+    font-size: 2.35rem;
 
     text-decoration: none;
 
@@ -144,6 +148,7 @@ body {
 
     .navbar {
         position: static;
+        transform: none;
 
         flex-direction: row;
         justify-content: center;
@@ -154,15 +159,16 @@ body {
     }
 
     .navbar a {
-        margin: 10px 12px;
-        font-size: 0.95rem;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 10px 14px;
     }
 
     .home {
         margin-left: 0;
 
         flex-direction: column;
-        gap: 35px;
+        gap: 40px;
 
         padding: 25px;
     }
@@ -189,10 +195,10 @@ body {
     .home-links {
         flex-direction: row;
         justify-content: center;
-        gap: 28px;
+        gap: 32px;
     }
 
     .home-links a {
-        font-size: 1.65rem;
+        font-size: 2rem;
     }
 }
