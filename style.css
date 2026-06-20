@@ -201,7 +201,7 @@ body {
 
     margin-left: 260px;
 
-    padding: 90px 90px 80px 90px;
+    padding: 90px;
 
     box-sizing: border-box;
 }
@@ -245,14 +245,28 @@ body {
     color: #3f3f3f;
 }
 
-/* ---------- PROJECT CARDS ---------- */
+/* ---------- FEATURED PROJECT ---------- */
 
-.projects-grid {
+.featured-project {
+    max-width: 1100px;
+
+    border-left: 5px solid #0056A6;
+
+    margin-bottom: 35px;
+}
+
+/* ---------- PROJECT GALLERY ---------- */
+
+.project-gallery {
     display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 30px;
 
-    max-width: 950px;
+    max-width: 1100px;
 }
+
+/* ---------- PROJECT CARDS ---------- */
 
 .project-card {
     background: #ffffff;
@@ -280,10 +294,6 @@ body {
         0 18px 45px rgba(0, 43, 91, 0.09);
 }
 
-.featured-project {
-    border-left: 5px solid #0056A6;
-}
-
 .project-meta {
     font-family: "IBM Plex Mono", monospace;
 
@@ -303,6 +313,7 @@ body {
 
     font-size: 1.7rem;
     font-weight: 600;
+    line-height: 1.3;
 
     margin: 0 0 16px 0;
 }
@@ -315,6 +326,37 @@ body {
 
     margin: 0 0 24px 0;
 }
+
+/* ---------- POSTER PREVIEWS ---------- */
+
+.poster-preview {
+    width: 100%;
+    height: auto;
+
+    border-radius: 16px;
+
+    margin-bottom: 24px;
+
+    border: 1px solid rgba(0, 43, 91, 0.12);
+
+    box-shadow:
+        0 12px 35px rgba(0, 43, 91, 0.08);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.poster-preview:hover {
+    transform: scale(1.02);
+
+    box-shadow:
+        0 20px 45px rgba(0, 43, 91, 0.12);
+}
+
+/* ---------- TAGS ---------- */
 
 .project-tags {
     display: flex;
@@ -339,6 +381,8 @@ body {
     font-size: 0.88rem;
     font-weight: 500;
 }
+
+/* ---------- PROJECT BUTTONS ---------- */
 
 .project-links {
     display: flex;
@@ -449,6 +493,10 @@ body {
 
     .portfolio-header h1 {
         font-size: 2.6rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
     }
 
     .project-card {
