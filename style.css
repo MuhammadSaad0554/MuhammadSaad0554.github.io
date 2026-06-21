@@ -103,15 +103,7 @@ body {
 
     max-width: 850px;
 
-    padding: 36px 44px;
-
-    border-radius: 32px;
-
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(8px);
-
-    box-shadow:
-        0 24px 70px rgba(0, 43, 91, 0.07);
+    padding: 20px;
 }
 
 /* ---------- PHOTO ---------- */
@@ -140,14 +132,16 @@ body {
 /* ---------- TEXT ---------- */
 
 .name {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Space Grotesk", sans-serif;
 
     color: #002B5B;
 
-    font-size: 4.25rem;
-    font-weight: 600;
+    font-size: 4.5rem;
+    font-weight: 700;
 
-    margin: 0 0 24px 0;
+    letter-spacing: -0.04em;
+
+    margin: 0 0 28px 0;
 }
 
 .intro {
@@ -159,6 +153,10 @@ body {
     color: #3f3f3f;
 
     margin: 0;
+}
+
+.intro-secondary {
+    margin-top: 34px;
 }
 
 /* ---------- RIGHT ICONS ---------- */
@@ -483,8 +481,7 @@ body {
 
     .content-column {
         max-width: 100%;
-        padding: 26px 22px;
-        border-radius: 24px;
+        padding: 20px;
     }
 
     .profile-photo {
