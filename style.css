@@ -162,13 +162,19 @@ body {
 /* ---------- RIGHT ICONS ---------- */
 
 .home-links {
-    justify-self: end;
+    position: fixed;
+
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     gap: 42px;
+
+    z-index: 1000;
 }
 
 .home-links a {
