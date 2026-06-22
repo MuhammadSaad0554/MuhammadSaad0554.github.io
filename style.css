@@ -145,10 +145,13 @@ body {
 }
 
 .intro {
-    max-width: 740px;
+    max-width: 680px;
 
-    font-size: 1.15rem;
-    line-height: 1.9;
+    font-family: "Azeret Mono", monospace;
+
+    font-size: 1.02rem;
+    font-weight: 300;
+    line-height: 2;
 
     color: #3f3f3f;
 
