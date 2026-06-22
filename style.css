@@ -812,7 +812,7 @@ body {
 
 .engagement-item {
     display: grid;
-    grid-template-columns: 80px 340px 1fr;
+    grid-template-columns: 340px 1fr;
     gap: 40px;
 
     align-items: start;
@@ -824,17 +824,6 @@ body {
 
 .engagement-item:last-child {
     border-bottom: 1px solid rgba(0, 43, 91, 0.12);
-}
-
-.engagement-number {
-    font-family: "IBM Plex Mono", monospace;
-
-    color: #0056A6;
-
-    font-size: 1rem;
-    font-weight: 500;
-
-    margin: 0;
 }
 
 .engagement-media img,
@@ -904,7 +893,7 @@ body {
 /* India-Pakistan section */
 
 .text-only {
-    grid-template-columns: 80px 1fr;
+    display: block;
 }
 
 .wide {
