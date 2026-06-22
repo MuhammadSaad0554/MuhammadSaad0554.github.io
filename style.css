@@ -707,7 +707,7 @@ body {
 }
 
 .reports-card {
-    border-left: 5px solid #0056A6;
+    border-top: 4px solid rgba(0, 86, 166, 0.18);
 }
 
 .reports-heading {
