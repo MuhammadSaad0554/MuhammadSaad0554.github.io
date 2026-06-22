@@ -270,7 +270,12 @@ body {
 
 .featured-preview {
     width: 100%;
-    height: auto;
+    height: 210px;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
 
     display: block;
 
