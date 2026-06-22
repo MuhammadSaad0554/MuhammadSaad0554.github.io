@@ -516,9 +516,17 @@ body {
     }
 
     .home-links {
+        position: static;
+        transform: none;
+        
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+        
         gap: 34px;
+        width: 100%;
+        
+        margin: 10px 0 35px 0;
     }
 
     .home-links a {
@@ -560,6 +568,32 @@ body {
     .project-card h2 {
         font-size: 1.45rem;
     }
+
+    .engagement-item {
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    padding: 42px 0;
+}
+
+.engagement-media img,
+.engagement-media video {
+    width: 100%;
+    height: auto;
+}
+
+.engagement-copy h2 {
+    font-size: 1.55rem;
+}
+
+.engagement-copy p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.engagement-links {
+    gap: 12px;
+}
 }
 
 /* ---------- ENGAGEMENTS & PRESS ---------- */
