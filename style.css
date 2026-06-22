@@ -803,3 +803,110 @@ body {
     box-shadow:
         0 8px 22px rgba(0, 43, 91, 0.08);
 }
+
+/* ---------- ENGAGEMENTS & PRESS ---------- */
+
+.engagement-list {
+    max-width: 1100px;
+}
+
+.engagement-item {
+    display: grid;
+    grid-template-columns: 80px 340px 1fr;
+    gap: 40px;
+
+    align-items: start;
+
+    padding: 55px 0;
+
+    border-top: 1px solid rgba(0, 43, 91, 0.12);
+}
+
+.engagement-item:last-child {
+    border-bottom: 1px solid rgba(0, 43, 91, 0.12);
+}
+
+.engagement-number {
+    font-family: "IBM Plex Mono", monospace;
+
+    color: #0056A6;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+.engagement-media img,
+.engagement-media video {
+    width: 100%;
+    display: block;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 43, 91, 0.08);
+}
+
+.engagement-copy h2 {
+    font-family: "Space Grotesk", sans-serif;
+
+    color: #002B5B;
+
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    margin: 0 0 22px 0;
+}
+
+.engagement-copy p {
+    font-family: "Azeret Mono", monospace;
+
+    color: #3f3f3f;
+
+    font-size: 0.94rem;
+    font-weight: 300;
+    line-height: 1.9;
+
+    margin: 0 0 28px 0;
+}
+
+.engagement-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.engagement-links a {
+    text-decoration: none;
+
+    color: white;
+    background-color: #002B5B;
+
+    padding: 10px 16px;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.engagement-links a:hover {
+    background-color: #0056A6;
+    transform: translateY(-2px);
+}
+
+/* India-Pakistan section */
+
+.text-only {
+    grid-template-columns: 80px 1fr;
+}
+
+.wide {
+    max-width: 850px;
+}
