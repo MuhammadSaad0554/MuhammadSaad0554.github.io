@@ -357,10 +357,13 @@ body {
 }
 
 .project-card p {
+    font-family: "Azeret Mono", monospace;
+
     color: #3f3f3f;
 
-    font-size: 1.05rem;
-    line-height: 1.8;
+    font-size: 0.96rem;
+    font-weight: 300;
+    line-height: 1.95;
 
     margin: 0 0 24px 0;
 }
