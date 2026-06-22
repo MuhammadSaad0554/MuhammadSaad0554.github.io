@@ -698,3 +698,60 @@ body {
         padding: 24px;
     }
 }
+
+/* ---------- REPORTS SECTION ---------- */
+
+.reports-section {
+    max-width: 1100px;
+    margin-top: 75px;
+}
+
+.reports-heading {
+    font-family: "Space Grotesk", sans-serif;
+    color: #002B5B;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    margin: 0 0 38px 0;
+}
+
+.report-group {
+    margin-bottom: 42px;
+}
+
+.report-group h3 {
+    font-family: "IBM Plex Mono", monospace;
+
+    color: #0056A6;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    margin: 0 0 18px 0;
+}
+
+.report-group a {
+    display: block;
+
+    font-family: "Azeret Mono", monospace;
+
+    color: #3f3f3f;
+
+    font-size: 0.94rem;
+    font-weight: 300;
+    line-height: 1.85;
+
+    text-decoration: none;
+
+    margin-bottom: 14px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.report-group a:hover {
+    color: #0056A6;
+    transform: translateX(5px);
+}
