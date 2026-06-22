@@ -699,41 +699,30 @@ body {
     }
 }
 
-/* ---------- REPORTS SECTION ---------- */
+/* ---------- DEMOCRACY & GOVERNANCE RESEARCH ---------- */
 
 .reports-section {
     max-width: 1100px;
     margin-top: 75px;
 }
 
+.reports-card {
+    border-left: 5px solid #0056A6;
+}
+
 .reports-heading {
     font-family: "Space Grotesk", sans-serif;
+
     color: #002B5B;
 
     font-size: 2rem;
     font-weight: 600;
-
-    margin: 0 0 38px 0;
-}
-
-.report-group {
-    margin-bottom: 42px;
-}
-
-.report-group h3 {
-    font-family: "IBM Plex Mono", monospace;
-
-    color: #0056A6;
-
-    font-size: 1rem;
-    font-weight: 500;
+    line-height: 1.25;
 
     margin: 0 0 18px 0;
 }
 
-.report-group a {
-    display: block;
-
+.reports-description {
     font-family: "Azeret Mono", monospace;
 
     color: #3f3f3f;
@@ -742,16 +731,75 @@ body {
     font-weight: 300;
     line-height: 1.85;
 
-    text-decoration: none;
+    max-width: 850px;
 
-    margin-bottom: 14px;
-
-    transition:
-        color 0.25s ease,
-        transform 0.25s ease;
+    margin: 0 0 40px 0;
 }
 
-.report-group a:hover {
+.report-group {
+    margin-bottom: 38px;
+}
+
+.report-group:last-child {
+    margin-bottom: 0;
+}
+
+.report-group h3 {
+    font-family: "IBM Plex Mono", monospace;
+
     color: #0056A6;
-    transform: translateX(5px);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    margin: 0 0 18px 0;
+}
+
+.report-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.report-pill {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 12px 18px;
+
+    background: rgba(0, 86, 166, 0.05);
+    border: 1px solid rgba(0, 86, 166, 0.16);
+    border-radius: 999px;
+
+    font-family: "Azeret Mono", monospace;
+    font-size: 0.82rem;
+    font-weight: 300;
+    line-height: 1.5;
+
+    color: #002B5B;
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.report-pill::before {
+    content: "📄";
+    margin-right: 10px;
+}
+
+.report-pill:hover {
+    background: rgba(0, 86, 166, 0.10);
+    border-color: rgba(0, 86, 166, 0.28);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(0, 43, 91, 0.08);
 }
